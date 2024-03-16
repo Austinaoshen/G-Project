@@ -1,0 +1,79 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js --strict-ssl=false install
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\libnvvp;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;E:\Tools\process lasso\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2023.1.1\;C:\Users\Shen0\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Shen0\AppData\Local\Programs\Python\Python311\;C:\Users\Shen0\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2022.3.2\bin;C:\Program Files\JetBrains\CLion 2022.3.2\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.2\bin;C:\Users\Shen0\.dotnet\tools;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\Shen0\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Shen0\AppData\Local\Programs\Python\Python311\;C:\Users\Shen0\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm 2022.3.2\bin;;C:\Program Files\JetBrains\CLion 2022.3.2\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.2\bin;;C:\Users\Shen0\.dotnet\tools;C:\Users\Shen0\AppData\Roaming\npm;C:\Users\Shen0\AppData\Local\Yarn\bin;D:\reactions\reactions_umi-master\node_modules\.bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.11.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: certificate has expired
+      at TLSSocket.onConnectSecure (node:_tls_wrap:1674:34)
+      at TLSSocket.emit (node:events:518:28)
+      at TLSSocket._finishInit (node:_tls_wrap:1085:8)
+      at ssl.onhandshakedone (node:_tls_wrap:871:12)
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "start": "umi dev",
+      "build": "umi build",
+      "postinstall": "umi generate tmp",
+      "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+      "test": "umi-test",
+      "test:coverage": "umi-test --coverage"
+  
+    },
+    "gitHooks": {
+      "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+      "*.{js,jsx,less,md,json}": [
+        "prettier --write"
+      ],
+      "*.ts?(x)": [
+        "prettier --parser=typescript --write"
+      ]
+    },
+    "dependencies": {
+      "@ant-design/pro-layout": "^6.5.0",
+      "antd": "^4.19.3",
+      "echarts": "^5.3.2",
+      "enquire-js": "^0.2.1",
+      "rc-queue-anim": "^2.0.0",
+      "rc-scroll-anim": "^2.7.6",
+      "rc-texty": "^0.2.0",
+      "rc-tween-one": "^3.0.3",
+      "react": "17.x",
+      "react-dom": "17.x",
+      "swiper": "^8.0.0",
+      "umi": "^3.5.21",
+      "react-document-title": "^2.0.3",
+      "react-github-button": "^0.1.11"
+    },
+    "devDependencies": {
+      "@types/react": "^17.0.0",
+      "@types/react-dom": "^17.0.0",
+      "@umijs/preset-react": "1.x",
+      "@umijs/test": "^3.5.21",
+      "lint-staged": "^10.0.7",
+      "prettier": "^2.2.0",
+      "typescript": "^4.1.2",
+      "yorkie": "^2.0.0"
+    },
+    "__npminstall_done": false
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
